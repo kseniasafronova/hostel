@@ -1,0 +1,6 @@
+SELECT places.id, places.number, rooms.number, room_types.typename 
+FROM places, rooms, room_types 
+WHERE (places.room_id = rooms.id AND rooms.room_type_id = room_types.id);
+
+
+SELECT * FROM `bookings` WHERE (date_in >= "2018/6/1" OR date_out <= "2018/6/30");
